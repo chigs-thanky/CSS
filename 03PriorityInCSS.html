@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority</title>
+    <link rel="stylesheet" href="priority.css">
+    <style>
+        /* Below is Internal CSS */
+        div {
+            width: 500px;
+            height: 200px;
+            background-color: darkkhaki;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Below is Inline CSS With Highest Priority-->
+    <!-- <div style="background-color: blue;"><span style="font-size: 50px;">This is DIV for checking priority in CSS.</span></div> -->
+
+    <div style="background-color: teal;"><span style="font-size: 20px;">This is DIV for checking priority in
+            CSS. <br><br>See the background-color of this div.
+        </span></div>
+
+    <p>
+    <dl style="font-size: 30px;">
+        <dt>Priority in CSS.
+        <dd>1. Inline</dd>
+        <dd>2. Internal or External (whichever comes last in line of code...)</dd>
+        <dd>
+            <li> Because code runs line-by-line</li>
+        </dd>
+        </dt>
+    </dl>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z-Index</title>
+    <style>
+        .box {
+            width: 120px;
+            height: 120px;
+            border: 2px solid black;
+        }
+
+        #box-1 {
+            background-color: red;
+        }
+
+        #box-2 {
+            background-color: green;
+            visibility: visible;
+            /* By Default Value */
+            visibility: collapse;
+            /* No difference */
+            visibility: hidden;
+            /* Will hide the element but shows its empty space. */
+            display: none;
+            /* Will hide the element & the space also. */
+        }
+
+        #box-3 {
+            background-color: blue;
+            display: none;
+        }
+
+        #box-4 {
+            background-color: yellow;
+        }
+
+        p {
+            font-size: 20px;
+            background-color: rgb(167, 163, 131);
+            position: relative;
+        }
+
+        .square {
+            border: 2px solid purple;
+            position: absolute;
+        }
+
+        #square1 {
+            width: 160px;
+            height: 160px;
+            margin: 38px 59px;
+            background-color: tomato;
+            color: white;
+            z-index: 4;
+        }
+
+        #square2 {
+            width: 180px;
+            height: 120px;
+            margin: 98px 3px;
+            background-color: darkcyan;
+            color: white;
+            z-index: 5;
+        }
+
+        #square3 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 32px;
+            background-color: darkred;
+            color: white;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Visibility</h2>
+    <div class="box" id="box-1">Box-1</div>
+    <div class="box" id="box-2">box-2</div>
+    <div class="box" id="box-3">box-3</div>
+    <div class="box" id="box-4">box-4</div>
+    <hr>
+    <h2>Z-Index</h2>
+    <p>Z-Index will work only for position:absolute, relative, fixed & sticky <br>Higher Z-Index value will appear on top. i.e. here square-2 has higher Z-Index value = 5</p>
+    <div class="square" id="square1">Square-1</div>
+    <div class="square" id="square2">Square-2</div>
+    <div class="square" id="square3">Square-3</div>
+
+    </body3>
+
+</html>

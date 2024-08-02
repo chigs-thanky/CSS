@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Child</title>
+    <style>
+        .container {
+            width: 233px;
+            margin: auto;
+            display: block;
+        }
+
+        input {
+            display: block;
+        }
+
+        /*
+        Pseudo Selector
+        Syntax: element(tag)-name [attribute-name = "value"]{
+            CSS properties to apply
+        }
+
+        */
+        /* Using Pseudo Selector - It targets attributes of elements*/
+        input[type="text"] {
+            width: 250px;
+            padding: 20px;
+            border: 2px solid red;
+        }
+
+        input[type="password"] {
+            width: 200px;
+            padding: 10px;
+            border: 5px solid black;
+        }
+
+        input[type="tel"] {
+            width: 150px;
+            border: 2px solid coral;
+        }
+
+        a[target] {
+            font-size: 50px;
+            color: crimson;
+            font-family: cursive;
+        }
+        a[target="_self"]{
+            color: khaki;
+            background-color: teal;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://www.google.com">Go to Google</a></h1>
+        <h1><a href="http://www.google.com" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://www.facebook.com" target="_self">Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            Username: <input type="text" name="" id="">
+            Password: <input type="password" name="" id="">
+            Mo.: <input type="tel" name="" id="">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item-1</li>
+            <li class="item" id="item-2">Item-2</li>
+            <li class="item" id="item-3">Item-3</li>
+            <li class="item" id="item-4">Item-4</li>
+            <li class="item" id="item-5">Item-5</li>
+        </ul>
+    </div>
+</body>
+
+</html>

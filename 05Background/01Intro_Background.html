@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background in CSS</title>
+    <style>
+      div {
+        height: 500px;
+        margin: 20px;
+        color: rgb(245, 10, 69);
+        font-size: 20px;
+        border: 10px dashed red;
+      }
+
+      .background-color {
+        background-color: rgb(116, 209, 152);
+      }
+      .background-image {
+        background-image: url(./Assets/iStock-614058412.jpg);
+        background-repeat: no-repeat;
+      }
+      .background-repeat {
+        background-image: url(./Assets/iStock-614058412.jpg);
+        /* background-repeat: no-repeat; */
+        /* background-repeat: repeat; */
+        background-repeat: repeat-x;
+        /* background-repeat:repeat-y; */
+      }
+      .background-position {
+        background-image: url(./Assets/iStock-614058412.jpg);
+        background-repeat: no-repeat;
+        /* background-position: left-to-right, top-to-bottom; */
+        background-position: top;
+        background-position: bottom;
+        background-position: center;
+        background-position: left;
+        background-position: right;
+      }
+      .background-size {
+        background-image: url(./Assets/iStock-614058412.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-size: cover;
+        background-size: contain;
+      }
+
+      .background-clip {
+        background-image: url(./Assets/iStock-614058412.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px;
+        background-clip: content-box;
+        background-clip: border-box;
+        background-clip: padding-box;
+      }
+
+      .background-attachment {
+        background-image: url(./Assets/iStock-614058412.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        /* background-attachment:local; */
+        /* background-attachment:scroll; */
+      }
+
+      .background-origin {
+        background-image: url(./Assets/iStock-614058412.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px;
+        background-origin: content-box;
+        background-origin: border-box;
+        background-origin: padding-box;
+      }
+
+      .background-shorthand {
+        border: 10px dotted blue;
+        /* Below is the order of shorthand background property */
+        /* background: background-color | url() | background-repeat | background-attachment | background-position / background-size; */
+        background: url(./Assets/iStock-614058412.jpg) no-repeat fixed center
+          center/cover;
+      }
+
+      .background-multiple {
+        border: 10px dotted blue;
+        background: url(./Assets/iStock-614058412.jpg),
+          url(./Assets/shu-USA-Florida-Miami-south-beach-469708088-Miami2you-1440x823.jpg);
+        /* background-repeat: no-repeat;
+            Applies to all backgrounds */
+        background-repeat: no-repeat, no-repeat, repeat;
+        /* background-size: width height; always follow this order */
+        background-size: 500px 300px, 300px 200px, contain;
+        background-position: 0px 0px, 700px 250px, center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background in CSS</h1>
+    <ol>
+      <li>background-color</li>
+      <li>background-image</li>
+      <li>background-repeat</li>
+      <li>background-position</li>
+      <li>background-size</li>
+      <li>background-clip</li>
+      <li>background-attachment</li>
+      <li>background-origin</li>
+      <li>background-shorthand</li>
+      <li>background-multiple</li>
+    </ol>
+    <hr />
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-position">background-position</div>
+    <div class="background-size">background-size</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-shorthand">background-shorthand</div>
+    <div class="background-multiple">background-multiple</div>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <!-- To import fonts from any online source, we have to link that font using link tag & then we can select that font in font-family.  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        .note {
+            font-size: 20px;
+            /* As we've linked font from google fonts, we can now use it */
+            /* Importing below from google fonts */
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bolder;
+        }
+
+        .container {
+            height: 544px;
+            /* width: 100%; Not much effect*/
+            border: 2px solid red;
+            display: flex; /* Initializing .container as a flexbox */
+            
+
+            /* Flex Properties for div.container --------------------------------------------------------------*/
+            flex-direction: row;
+            /* (Default value: row) */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* Flex Wrap is used for Wrapping items inside container */
+            /* flex-wrap: wrap-reverse; */
+            flex-wrap:wrap;
+
+            /* Shorthand (property) of -flex-direction & flex-wrap : */
+            /* flex-flow: flex-direction flex-wrap; (both can be given in one line using flex-flow) */
+            /* flex-flow: row wrap; */
+
+            /* Justify-content */
+            justify-content: baseline;
+            justify-content:center; /*Works along x-axis */
+            /* justify-content: end; */
+            /* justify-content:left; */
+            /* justify-content:right; */
+            /* justify-content:space-between; */ /*Space between each box is same except corners*/ 
+            /* justify-content: space-around; */ /*Space between each box is same including corners*/
+            /* justify-content: space-evenly; */ /*Space between each box is same throughout */
+            /* justify-content: stretch; */
+
+            /* align-items only work with display-flex */
+            
+            align-items: stretch; /* Default Value */
+            align-items: center;
+            align-items: flex-end;
+            align-items: normal;
+            align-items: baseline; /* Align text from baseline like how English language is written. from touching lower line. */
+            
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px 10px;
+            color: aliceblue;
+
+            /* Flex Properties for div.items */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is FlexBox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+
+
+
+
+
+    <p class="note">FlexBox is a one-dimensional layout method for laying out items in rows or columns. <br>
+        CSS FlexBox is a better way to align items into a container. <br>
+        FlexBox = Flexible + Box</p>
+</body>
+
+</html>

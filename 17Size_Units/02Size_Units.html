@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        #px {
+            border: 2px solid black;
+            background-color: aqua;
+            color: red;
+            font-size: 30px;
+            width: 683px;
+            height: 500px;
+        }
+
+        #vw {
+            border: 2px solid black;
+            background-color: aqua;
+            color: red;
+            font-size: 30px;
+            width: 50vw;
+        }
+
+        #vh {
+            border: 2px solid black;
+            background-color: aqua;
+            color: red;
+            font-size: 30px;
+            height: 50vh;
+        }
+
+        #vw-vh {
+            border: 2px solid black;
+            background-color: aqua;
+            color: red;
+            font-size: 30px;
+            width: 50vw;
+            /* (50% of screen width) */
+            height: 50vh;
+            /* (50% of screen height) */
+        }
+
+        .extra-div {
+            width: 70%;
+            height: 800px;
+            border: 2px solid black;
+            background-color: aqua;
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="px">
+        These are Width-height in Pixels.
+    </div>
+    <hr>
+    <div id="vw">
+        This is Viewport Width.
+    </div>
+    <hr>
+
+    <div id="vh">
+        This is Viewport Height.
+    </div>
+    <hr>
+
+    <div id="vw-vh">
+        This is Viewport Width & Height Combined.
+    </div>
+    <hr>
+    <div class="extra-div">
+        This is Extra-Div for scrolling & Spacing.
+    </div>
+</body>
+
+</html>

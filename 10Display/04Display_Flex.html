@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* NOTE: TO REMOVE SCROLL-BAR, WE HAVE TO REMOVE MARGIN AND PADDING 'CAUSE BY DEFAULT, THERE WILL BE SOME MARGIN AND PADDING. */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: auto;
+            height: 100vh;
+            border: 2px solid red;
+            background-color: lightseagreen;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            /* margin: 10px; */
+            text-align: center;
+        }
+
+        .topleft {
+            display: flex;
+            justify-content: left;
+            align-items: baseline;
+        }
+
+        .topright {
+            display: flex;
+            justify-content: right;
+            align-items: baseline;
+        }
+
+        .bottomleft {
+            display: flex;
+            justify-content: left;
+            align-items: end;
+        }
+
+        .bottomright {
+            display: flex;
+            justify-content: right;
+            align-items: end;
+        }
+
+        p {
+            font-size: 2rem;
+            font-family: cursive;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box topleft">
+            <p>Box-1</p>
+        </div>
+        <div class="box topright">
+            <p>Box-2</p>
+        </div>
+        <div class="box bottomleft">
+            <p>Box-3</p>
+        </div>
+        <div class="box bottomright">
+            <p>Box-4</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

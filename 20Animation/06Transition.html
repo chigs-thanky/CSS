@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 75px;
+            border: 2px solid #000000;
+            background-color: #ff0000;
+            text-align: center;
+            transition: width 2s, height 2s, font-size 2s;
+        }
+
+        .box:hover {
+            width: 400px;
+            height: 150px;
+            background-color: #1ec7e6;
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+
+
+            /* Transition Property Shorthand */
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s; */
+
+            /* transition: width 2s ease 2s; */
+
+            /* We can give multiple CSS Properties as below: */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Chigs Thanky</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Practice</title>
+    <style>
+        p {
+            font-size: 30px;
+            /* line height defines space between two lines */
+            line-height: 20px;
+            /* line-height: -20px; Negative values don't work */
+            line-height: 30px;
+        }
+
+        .para {
+            background-color: coral;
+            /* font-size: 30px; */
+        }
+
+        #chirag::first-letter {
+            font-size: 60px;
+            color: aliceblue;
+        }
+
+        #thanki::first-letter {
+            font-size: 60px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is Paragraph-1</p>
+    <p>This is Paragraph-2</p>
+    <p class="para"><span id="chirag">Chirag</span>&emsp;<span id="thanki">Thanki</span></p>
+</body>
+
+</html>

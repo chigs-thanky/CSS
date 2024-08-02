@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-safe fonts</title>
+    <!-- Linking Ubuntu font from google below: -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        h3{
+            background-color: teal;
+            color: khaki;
+            
+        }
+        .web-safe-fonts{
+            font-family: sans-serif;
+            background-color: coral;
+        }
+        .web-fonts{
+            font-family: 'Ubuntu';
+            background-color: slategray;
+            color: springgreen;
+        }
+    </style>
+</head>
+<body>
+    <h3>What are Web Safe Fonts? 
+        <br>
+        &emsp;&emsp;Web safe fonts are fonts that are pre-installed by many operating systems. While not all systems have the same fonts installed, you can use a web safe font stack to choose several fonts that look similar, and are installed on the various systems that you want to support. 
+        <br>
+        &emsp;&emsp;If you want to use fonts other than ones pre-installed, as of CSS3, you can use Web Fonts.</h3>
+
+        <p class="web-safe-fonts">Fonts which are pre-installed on (most of) system are called web-safe fonts. <br>This is a web-safe font.</p>
+        <p class="web-fonts">Fonts which are imported from web on system are called web fonts. <br> This is a web font.</p>
+</body>
+</html>

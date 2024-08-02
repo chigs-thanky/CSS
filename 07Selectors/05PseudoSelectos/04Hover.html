@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover & Transition</title>
+    <style>
+        .transition {
+            background-color: aqua;
+            width: 200px;
+            height: 50px;
+            transition: width 3s, background-color 3s, font-size 3s, color 3s, text-align 3s;
+        }
+
+        .transition:hover {
+            width: 500px;
+            background-color: burlywood;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hover and Transition!</h1>
+    <p>We're going to hover over div element to change its bg-color and font-color with animation (transition) here.</p>
+    <p>Transition is nothing but how an animation take place (smooth)</p>
+    <p>"transition: CSS property (space) time;"</p>
+    <p>e.g. If we want that the color and width of div increase smoothly then we can write the code as below</p>
+    <code>
+    "transition: width 5s, background-color 5s;"
+</code>
+    <p>We can write as many properties in transition separated by a comma (,)</p>
+    <hr>
+    <div class="transition">Hover over me to see change</div>
+    <h2>Q. The question is why text-align doesn't work when exiting hover?</h2>
+</body>
+
+</html>

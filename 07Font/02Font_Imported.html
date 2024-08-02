@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Import</title>
+
+    <!-- To import fonts from any online source, we have to link that font using link tag & then we can select that font in font-family. -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        #heading{
+            font-size: 25px;
+        }
+        #normal{
+            font-size: 50px;
+        }
+        #imported{
+            font-size: 50px;
+            /* As we've linked font from google fonts, we can now use it */
+            /* Importing below from google fonts */
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .note{
+            font-size: 20px;
+            background-color: coral;
+        }
+        #chigs{
+            background-color: coral;
+            font-size: 20px;
+        }
+        #chigs::first-letter{
+            color: white;
+            font-size: 50px;
+        }
+        .note:hover{
+            background-color: teal;
+            color: khaki;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="heading">In this HTML document, we are importing fonts from <strong><u>google fonts</u></strong> or any other source using <strong><u>link tag</u>.</strong></p>
+    <hr>
+    <p id="normal">Normal - Hello! It's a beautiful today.</p>
+    <p id="imported">Ubuntu- Hello! It's a beautiful today.</p>
+    <hr>
+    <p class="note">1px = 1/96th of an inch.</p>
+    <p id="chigs">Chirag Thanki</p>
+</body>
+</html>

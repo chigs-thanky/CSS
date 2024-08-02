@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+    <style>
+        button{
+            border: 2px solid khaki;
+            background-color: teal;
+            color: khaki;
+            font-size: 30px;
+            padding: 10px 30px;
+        }
+        /* Applying pseudo element by putting colon(:) after an element */
+        button:hover {
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(48, 7, 228);
+            color: rgb(231, 5, 163);
+            font-size: 30px;
+            padding: 10px 30px;
+            border-radius: 50px;
+        }
+
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: chocolate;
+        }
+        a:hover{
+            color: teal;
+        }
+        a:active{
+            color: springgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class Selector (:)</h1>
+    <!-- Note:Pseudo Class Selectors are used for styling hover, active links, etc to an element. -->
+    <button>Hover Me</button>
+    <hr>
+    <a style="font-size: 50px;" href="#C">Click Me</a>
+    <hr>
+    <a  style="font-size: 50px;" href="#">Click Here</a> 
+</body>
+</html>

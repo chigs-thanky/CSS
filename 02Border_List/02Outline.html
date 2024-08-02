@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Outline</title>
+    <style>
+        p {
+            margin: 12%;
+            padding: 15px;
+            border: 2px solid red;
+            outline-style: solid;
+            outline-width: 5px;
+            outline-color: green;
+            outline-offset: 2px;
+        }
+
+        .one {
+            outline: 2px dotted blue;
+            outline-offset: 8px;
+        }
+
+        .two {
+            outline: 5px dashed black;
+            outline-offset: -14px;
+        }
+
+        .three {
+            outline: 7px ridge palegreen;
+            outline-offset: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>outline: width style color; <br> outline-offset;</h1>
+    <p> Border: 2px solid red | Outline: 5px solid green | Offset: 2px</p>
+    <p class="one">Border: 2px solid red | Outline: 2px dotted blue | Offset: 5px</p>
+    <p class="two">Border: 2px solid red | Outline: 5px dashed black | Offset: -14px</p>
+    <p class="three">Border: 2px solid red | Outline: 7px ridge palegreen | Offset: 20px</p>
+</body>
+
+</html>

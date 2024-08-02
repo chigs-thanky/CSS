@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: tan;
+        }
+
+        /* table{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        } */
+        /* We can do table, td simultaneously as below */
+        table,td{
+            border: 1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+            width: 600px;
+            height: 400px;
+        }
+        td{
+            padding: 20px;
+        }
+
+        tr:nth-child(odd){
+            /* tr:nth-child(2n + 1)*/
+                background-color: teal;
+                color: khaki;
+            }
+            tr:nth-child(even){
+            /* tr:nth-child(2n){ */
+            background-color: coral;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-last-child(1){
+            background-color: lightcoral;
+            color:red;
+        }
+
+        .responsive-table{
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            border: 5px dashed black;
+            overflow: hidden;
+            /* overflow-x:hidden; */
+            /* overflow-y: hidden; */
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table in CSS</h1>
+    <div class="responsive-table">
+        <table>
+            <tr>
+                <td>Data-1</td>
+                <td>Data-2</td>
+                <td>Data-3</td>
+                <td>Data-4</td>
+            </tr>
+            <tr>
+                <td>Data-5</td>
+                <td>Data-6</td>
+                <td>Data-7</td>
+                <td>Data-8</td>
+            </tr>
+            <tr>
+                <td>Data-9</td>
+                <td>Data-10</td>
+                <td>Data-11</td>
+                <td>Data-12</td>
+            </tr>
+            <tr>
+                <td>Data-13</td>
+                <td>Data-14</td>
+                <td>Data-15</td>
+                <td>Data-16</td>
+            </tr>
+            <tr>
+                <td>Data-17</td>
+                <td>Data-18</td>
+                <td>Data-19</td>
+                <td>Data-20</td>
+            </tr>
+            <tr>
+                <td>Data-21</td>
+                <td>Data-22</td>
+                <td>Data-23</td>
+                <td>Data-24</td>
+            </tr>
+            <tr>
+                <td>Data-25</td>
+                <td>Data-26</td>
+                <td>Data-27</td>
+                <td>Data-28</td>
+            </tr>
+            <tr>
+                <td>Data-29</td>
+                <td>Data-30</td>
+                <td>Data-31</td>
+                <td>Data-32</td>
+            </tr>
+            <tr class="last_row">
+                <td>Data-33</td>
+                <td>Data-34</td>
+                <td>Data-35</td>
+                <td>Data-36</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

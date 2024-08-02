@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Order</title>
+    <style>
+        .note {
+            font-size: 20px;
+            /* As we've linked font from google fonts, we can now use it */
+            /* Importing below from google fonts */
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bolder;
+        }
+
+        .container {
+            height: 544px;
+            /* width: 100%; Not much effect*/
+            border: 2px solid red;
+            display: flex;
+            /* Initializing .container as a flexbox */
+            flex-direction: row;
+            align-items: center;
+            align-items: flex-start;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px 10px;
+            color: aliceblue;
+        }
+
+        /* Below listed properties are for individual items, not for any particular class */
+
+        /* Flex Properties for div.items */
+
+        #item-1 {
+            /*Empty ruleset means when you use selector without any property. Here, we've commented all properties. That's why it shows the error.*/
+            /* Order is used for order items, higher order items shift to last, lower order items comes first */
+
+            /* higher the order, later it shows up in container */
+            /* order: 5; */
+
+            /* flex-grow: 1; */
+            /* Used for stretching items horizontally */
+
+            /* flex-shrink: 1;*/
+            /* Opposite of flex-grow */
+        }
+
+        #item-2 {
+            /* order: 1; */
+            /* flex-grow: 2; */
+
+            flex-basis: 200px;
+            /* When flex-direction is set to row, flex-basis will control width */
+            /* When flex-direction is set to column, flex-basis will control height */
+
+
+            /* Flex shorthand property */
+            /* flex: flex-grow flex-shrink flex-basis; */
+        }
+
+        #item-3 {
+            /* order: 2; */
+            /* flex-grow: 3; */
+            /* flex-shrink: 5; */
+            align-self: flex-end;
+        }
+
+        /* ------------------------------------------------------------------------------- */
+    </style>
+</head>
+
+<body>
+    <h1>This is FlexBox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">1<sup>st</sup>&ensp;Box</div>
+        <div class="item" id="item-2">2<sup>nd</sup>&ensp;Box</div>
+        <div class="item" id="item-3">3<sup>rd</sup>&ensp;Box</div>
+
+    </div>
+</body>
+
+</html>

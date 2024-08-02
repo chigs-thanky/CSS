@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: red;
+            position: relative;
+            animation-name: abc;
+            animation-duration: 10s;
+            animation-delay: 2s;
+
+        }
+
+        /* To make animation,
+        we have to use word "@Keyframes" (@ is must before keyframes) and give animation a name (any name, e.g. abc, xyz, etc.)
+        Then we have to use
+        From and two points or we can give that in percentage(%) also. */
+
+        /* First making an animation with name abc*/
+        @keyframes abc {
+
+            /* from {}
+
+            to {} */
+            0% {
+                background-color: red;
+                /*Need to specify */
+                top: 8px;
+                left: 8px;
+            }
+
+            25% {
+                background-color: blue;
+                top: 10px;
+                left: 400px;
+            }
+
+            50% {
+                background-color: rgb(255, 230, 0);
+                top: 400px;
+                left: 400px;
+            }
+
+            75% {
+                background-color: rgb(255, 0, 85);
+                top: 400px;
+                left: 10px;
+            }
+
+            100% {
+                background-color: rgb(72, 255, 0);
+                top: 10px;
+                left: 10px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    </div>
+    <p>Animation is used to move/animate this red box to diffrent location with diffrent styles.</p>
+    <p>We want to move this red-box in square path (e.g. First initial position, then top-right side, then
+        bottom-right
+        side, then bottom-left side and then again back to initial position.)</p>
+    <p>First we're giving this box position absolute and body relative position.</p>
+</body>
+
+</html>

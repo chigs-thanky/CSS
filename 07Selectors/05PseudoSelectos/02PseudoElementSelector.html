@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Selector</title>
+    <style>
+        h1::before {
+            content: "--> ";
+        }
+
+        h1::after {
+            content: " <--";
+        }
+
+        /* p::first-letter {
+            font-size: 80px;
+            color: teal;
+        }
+
+        p::first-line {
+            font-size: 50px;
+            color: brown;
+        } */
+
+        label::selection {
+            font-size: 100px;
+            background-color: teal;
+            color: khaki;
+        }
+
+        /* span::before {
+            content: "Mr. ";
+        } */
+
+        span {
+            background-color: teal;
+            color: khaki;
+            display: inline-block;
+        }
+
+        span::first-letter {
+            color: red;
+            font-size: 50px;
+            /* Note:Why first letter is not geting 50px size ?
+            Because We give size only to block- level elements and span is a inline-element, that's why we have to convert span into a block-level element using "display: block;" property. */
+        }
+
+        label {
+            display: block;
+        }
+
+        label::first-letter {
+            font-size: 60px;
+            color: crimson;
+        }
+
+        h2 {
+            text-transform: capitalize;
+            background-color: lightslategray;
+            display: inline;
+            /* Intentionally, we made h2's display property to inline from block just to understand the concept. */
+            font-size: 32px;
+
+            display: inline-block;
+        }
+
+        h2::first-letter {
+            font-size: 64px;
+            color: wheat;
+            /* doesn't work because h2 is now not a block-level element. */
+            /* padding: 50px; Works only on first-letter. */
+
+            /* margin-top: 20px; Q. Why not working ? */
+            padding-top: 30px;
+        }
+
+        h2::selection {
+            color: white;
+            background-color: blue;
+        }
+
+        p>i {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Element Selector (::)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi amet hic unde!</p>
+    <label>This is Label</label>
+    <hr>
+    <span>Chirag Thanki</span>
+    <label>Virat Kohli</label>
+    <h2 id="chigs">chirag jitendrakumar thanki</h2>
+
+
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+
+</body>
+
+</html>

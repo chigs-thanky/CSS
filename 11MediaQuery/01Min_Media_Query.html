@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Media Query</title>
+    <style>
+        h1::after {
+            content: " - Original";
+        }
+
+        body {
+            background-color:thistle;
+            color: tomato;
+        }
+
+        /* Breakpoints are imported from BootStrap breakpoints */
+        
+        /*Breakpoints are points at different resolutions e.g. Small devices (landscape phones, 576px and up),
+         Medium devices (tablets, 768px and up), 
+         Large devices (desktops, 992px and up), 
+         Large devices (desktops, 992px and up), 
+         X-Large devices (large desktops, 1200px and up), 
+         XX-Large devices (larger desktops, 1400px and up) */
+
+
+        /* Min Media Query */
+
+        /* // X-Small devices (portrait phones, less than 576px)
+        // No media query for `xs` since this is the default in Bootstrap*/
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) {
+            h1::after {
+                content: " - 576px";
+            }
+
+            body {
+                background-color: coral;
+                color: black;
+            }
+
+        }
+
+        /* // Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            h1::after {
+                content: " - 768px";
+            }
+
+            body {
+                background-color: burlywood;
+                color: black;
+            }
+        }
+
+        /* // Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            h1::after {
+                content: " - 992px";
+            }
+
+            body {
+                background-color: crimson;
+                color: aliceblue;
+            }
+        }
+
+        /* // X-Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            h1::after {
+                content: " - 1200px";
+            }
+
+            body {
+                background-color: seagreen;
+                color: red;
+            }
+        }
+
+        /* // XX-Large devices (larger desktops, 1400px and up) */
+        @media (min-width: 1400px) {
+            h1::after {
+                content: " - 1400px";
+            }
+
+            body {
+                background-color: palegreen;
+                color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello</h1>
+</body>
+
+</html>

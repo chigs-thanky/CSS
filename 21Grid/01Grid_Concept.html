@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept of Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 600px;
+            height: 500px;
+            border: 1px solid black;
+            background-color: red;
+            padding: 10px;
+
+            /* Note: Grid property applies to parent only, for child/element it won't work  */
+            display: grid;
+            /* When given "display: grid;" property, grid-items adjusts itself according to space */
+
+            /* display: inline-grid;
+            Used when we want to work with inline items rather than block.
+            */
+
+            grid-template-columns: auto auto;
+            /* We wrote auto 2 times to get two columns, if we want 3 columns, we have to write auto 3 times */
+
+            grid-template-rows: auto auto auto auto auto;
+            /* Note: auto doesn't work in row because row depends on the number of columns. 
+            We can however change row size using pixels (px) as below: 
+            Here are six rows, so we are changing the size of first two rows */
+            grid-template-rows: 50px 150px;
+
+            /* Now if we want space between column & rows then we can use "gap" propery as below: */
+            column-gap: 20px;
+            row-gap: 10px;
+
+            /* To combine both row-gap and column-gap, we only write "gap: row-gap-value (space) column-gap-value;" */
+            gap: 10px 10px;
+
+            /* To apply same row & column gap, we use "gap: value" */
+            gap: 20px;
+
+
+        }
+
+        .Box {
+            background-color: aqua;
+            /* width: 50px;
+            height: 25px; */
+            /* Note: Width & height don't need to specify for Grid-items */
+            border: 2px solid black;
+            font-size: 25px;
+            padding: 5px 0px;
+            text-align: center;
+        }
+    </style>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Grid Layout</h1>
+    <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design
+        web
+        pages without having to use floats and positioning.</p>
+    <div class="container">
+        <div class="Box Grid-item-1">1</div>
+        <div class="Box Grid-item-2">2</div>
+        <div class="Box Grid-item-3">3</div>
+        <div class="Box Grid-item-4">4</div>
+        <div class="Box Grid-item-5">5</div>
+        <div class="Box Grid-item-6">6</div>
+        <div class="Box Grid-item-7">7</div>
+        <div class="Box Grid-item-8">8</div>
+        <div class="Box Grid-item-9">9</div>
+        <div class="Box Grid-item-10">10</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <!-- CDN LINK HERE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        nav {
+            background-color: darkolivegreen;
+            display: flex;
+            position: relative;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        li {
+            list-style-type: none;
+            font-size: 30px;
+            margin: 20px 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .bar {
+            font-size: 30px;
+            color: aliceblue;
+            position: absolute;
+            top: 38px;
+            right: 50px;
+            display: none;
+        }
+
+        .input {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: 34px;
+            right: 42px;
+            opacity: 0;
+        }
+
+        .slide {
+            background-color: darkolivegreen;
+            width: 25%;
+            position: absolute;
+            top: 114px;
+            right: 8px;
+            display: none;
+        }
+
+        #ul{
+            font-size: 30px;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* .input:checked+.slide{
+                display: block; Didn't work because I kept div outside <nav>
+        } */
+
+        .input:checked+.slide{
+                display: block;
+
+        }
+
+        @media (max-width:900px){
+            .bar{
+                display: block;
+            }
+            nav ul{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <i class="fa-solid fa-bars bar"></i>
+            <input type="checkbox" class="input">
+        
+
+        <div class="slide">
+            <ul id="ul">
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Goal</a></li>
+                <li><a href="#">Norms</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+</body>
+
+</html>

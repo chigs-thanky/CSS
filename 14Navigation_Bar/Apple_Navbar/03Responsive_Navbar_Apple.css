@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    margin: 2px;
+    position: relative;
+}
+
+#logo {
+    font-size: 100px;
+    margin: 10px;
+}
+
+#input {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    left: 123px;
+    border: 2px solid black;
+    display: none;
+    opacity: 0;
+}
+
+#hamburger {
+    font-size: 25px;
+    margin: 10px;
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+
+
+/* #input:checked{
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+.navbar-links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-links a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+}
+
+/* Applying Media Queries for making responsive design */
+@media (min-width:1441) {
+    #navbar {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1440) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}

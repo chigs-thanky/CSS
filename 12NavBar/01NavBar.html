@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            width:100%;
+            /* height: 50px; */
+            /* Don't give height to navbar ever*/
+            background-color: teal;
+            color: khaki;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .navfont {
+            font-size: 30px;
+        }
+
+        i {
+            width: 100px;
+            height: 100px;
+            color: khaki;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            background-color: teal;
+            display: none;
+            position: relative;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .posiab2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 45px;
+            opacity: 0;
+        }
+
+        .posiab2:checked+p {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            font-size: 30px;
+            size: 30px;
+            display: block;
+        }
+
+        @media (max-width: 1200px){
+            body{
+                background-color: black;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body{
+                background-color: rgb(124, 12, 12);
+            }
+            .nav{
+                flex-direction: column;
+                position: absolute;
+                top: 5px;
+            
+            }
+            .posiab{
+                display: none;
+            }
+
+            .navfont{
+                margin-top: 20px;
+                padding: 10px;
+            }
+         }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <i class="fa-solid fa-bars posiab"></i>
+            <input type="checkbox" class="posiab2 ">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, doloremque?</p>
+            <div class="navfont">Home</div>
+            <div class="navfont">About</div>
+            <div class="navfont">Service</div>
+            <div class="navfont">Contact</div>
+        </nav>
+    </header>
+</body>
+
+</html>

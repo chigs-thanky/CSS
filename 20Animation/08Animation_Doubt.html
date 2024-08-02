@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubt</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 1s, height 1s, transform 1s;
+        }
+
+        div:hover {
+            width: 200px;
+            height: 200px;
+            transform: rotate(90deg);
+            /* transform: translate(250px, 250px); */
+            /* Only one property works at the same time. */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transition + Transform</h1>
+    <p>Hover over the div element below:</p>
+    <div></div>
+</body>
+
+</html>

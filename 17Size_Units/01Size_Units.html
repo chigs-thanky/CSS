@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        .default {
+            font-size: 16px;
+            border: 2px solid;
+        }
+
+        .rem {
+            border: 2px solid;
+            font-size: 1rem;
+            /* 1 rem = 16px */
+
+        }
+        .em {
+            border: 2px solid;
+            font-size: 1em;
+
+        }
+        .vw {
+            border: 2px solid;
+            /* font-size: 1rem; */
+            width: 50vw; 
+            /* 50vw means 50% of your screen (Similar to percentage) */
+
+        }
+        .vh {
+            border: 2px solid;
+            /* font-size: 1rem; */
+            height: 50vh;
+
+        }
+
+        #note{
+            font-size: 25px;
+            background-color: teal;
+            color: khaki;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Size Units in CSS</h1>
+
+    <div class="default">
+        <h3>This is Default font-size: 16px</h3>
+    </div>
+    <hr>
+
+    <div class="rem">
+        <h3>This is REM Unit</h3>
+    </div>
+    <hr>
+
+    <div class="em">
+        <h3>This is Em Unit</h3>
+    </div>
+    <hr>
+    <p id="note">EM vs REM <br>EM is relative to the parent element's font size, so if you wish to scale the element's size based on its parent's size, use EM.<br> REM is relative to the root (HTML) font size, so if you wish to scale the element's size based on the root size, no matter what the parent size is, use REM.</p>
+
+    <div class="vw">
+        <h3>This is Vw Unit</h3>
+        <!-- Width will stay constant irrespective of screen the size (Responsive) -->
+    </div>
+    <hr>
+    <div class="vh">
+        <h3>This is Vh Unit</h3>
+        <!-- Height will stay constant irrespective of screen the size (Responsive) -->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibiling Selector</title>
+    <style>
+        .parent+p {
+            background-color: teal;
+            color: khaki;
+        }
+
+        .bro+p+p {
+            background-color: thistle;
+            color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adjacent Sibiling Selector (+)</h1>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <hr>
+    <div class="bro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <div class="bapu">
+        <div class="papa">
+            <p class="daughter"></p>
+            <p class="son"></p>
+        </div>
+        <div class="kaka">
+            <p class="daughter1"></p>
+            <p class="doughter2"></p>
+            <p class="son3"></p>
+        </div>
+    </div>
+</body>
+
+</html>

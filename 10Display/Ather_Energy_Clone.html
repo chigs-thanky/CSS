@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Ather CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            border: 2px solid red;
+            margin:auto;
+            width: 50%;
+        
+        }
+        /*Note:Inline element cannot be auto centered because they don't have any width while block elements have width so if you want to center any element using auto function, you need to make that element a block. Here, img is an inline, so making it block & then see the results.*/
+        img{
+            width: 100px;
+            display: block;
+            margin: auto;
+        }
+        h3{
+            /* font-size: 30px; */
+            font-family: cursive;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AtherLogo.jpg" alt="Ather Logo">
+        <h3>Welcome to Ather Energy</h3>
+    </header>
+</body>
+</html>

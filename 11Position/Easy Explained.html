@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .main {
+            border: 2px solid;
+            background-color: #e4ab98;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            padding: 8px;
+            width: fit-content;
+            height: fit-content;
+            /* display: inline; */
+            /*Can't adjust the height and width*/
+            /* display: inline-block; */
+            /*Can adjust the height and width*/
+
+            /* display: flex; Can only be given to parent element */
+        }
+
+        /* body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; only works with height */
+
+        #box-1 {
+            position: static;
+            /* (Default)  */
+            top: 10px;
+            left: 500px;
+            /* NOTE:(TOP, LEFT, BOTTOM, RIGHT, FUNCTIONALITY DOESN'T WORK WITH STATIC POSITION). */
+            background-color: #a52a2a;
+            color: aliceblue;
+
+        }
+
+        #box-2 {
+            position: relative;
+            top: 100px;
+            left: 150px;
+            background-color: #00ffff;
+        }
+
+        #box-3 {
+            /* COUNT'S FROM TOP-LEFT CORNER irrespective of its parent*/
+            position: absolute;
+            top: 500px;
+            left: 50px;
+            /* right: 0; */
+            background-color: #d2b48c;
+
+        }
+
+        .sticky-container {
+            border: 2px solid black;
+            width: auto;
+            height: 500px;
+            background-color: slategrey;
+        }
+
+        #box-4 {
+            position: sticky;
+            top: 0px;
+            left: 500px;
+            background-color: #d2691e;
+        }
+
+        #box-5 {
+            background-color: #00ff7f;
+            position: fixed;
+            top: 8px;
+            /* left: 8px; */
+            right: 8px;
+            /* NOTE: 8px is by default value the CSS counts automatically. */
+        }
+
+        .blank-space {
+            padding-bottom: 1000px;
+            background-color: darkolivegreen;
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <h1>CSS Positions</h1>
+
+        <div class="box" id="box-1">Box-1-Static <br>-Top, right, Bottom, left values don't work with static position.
+        </div>
+
+        <div class="box" id="box-2">Box-2-Relative <br>- Position is relative to <b>"box-1 static"</b>. <br>- Counts
+            from
+            its above element's position</div>
+    </div>
+
+
+    <div class="box" id="box-3">Box-3-Absolute <br>-COUNT'S FROM TOP-LEFT CORNER irrespective of its parent.
+        <br>-Here, it is in last div blank-space but it ignores it and counts its position from viewport only.
+    </div>
+
+
+    <div class="sticky-container">
+        <div class="box" id="box-4">Box-4-Sticky <br>-Sticks to its parent. - i.e. div.sticky-container.
+            <br>-Unsticks when its parent ends
+        </div>
+    </div>
+
+    <div class="box" id="box-5">Box-5-Fixed <br>-Works with only top, right, bottom, left values. <br> -Counts
+        fromviewport. <br>-Sticks to the screen irrespective of scrolling. <br>-Once fixed doesn't change</div>
+
+
+
+    <div class="blank-space">
+        <p>Q.1 Why border color is "white" in box-1 when given only to font?</p>
+        <p>Ans. Because if we have given border property without specifying color like this: <b>"Border:"2px solid"
+            </b> and
+            div/container/font color is given, then border will automatically take its parent/font/container color.
+        </p>
+        <p>E.g.
+        <ul>
+            <li style="padding: 2px; font-size: 20px; font-weight: bold;">border: 2px solid</li>
+            <li style="padding: 2px; font-size: 20px; font-weight: bold;">color:white</li>
+            <li style="padding: 2px; font-size: 20px; font-weight: bold;">then this will take "white" color as a
+                "border-color"</li>
+        </ul>
+        </p>
+
+    </div>
+
+</body>
+
+</html>

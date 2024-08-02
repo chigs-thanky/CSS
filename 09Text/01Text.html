@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text CSS</title>
+    <style>
+        p{
+            background-color: teal;
+            color: khaki;
+            font-size: 30px;
+        }
+        .text-align{
+            text-align: center;
+            text-align: end;
+            text-align: justify;
+            text-align: left;
+            text-align: right;
+        }
+        .color{
+            color: tomato;
+        }
+        .text-decoration{
+            text-decoration: dashed;
+            text-decoration: overline;
+            text-decoration: underline;
+            text-decoration: underline wavy red;
+            line-height: 50px;
+        }
+        #a{
+            color: coral;
+            text-decoration:overline;
+            text-decoration: line-through;
+            text-decoration: dotted underline blue;
+            text-decoration: dashed underline blue;
+            text-decoration: underline overline black;
+            text-decoration: double underline overline black;
+            text-decoration: none;
+        }
+        .text-transform{
+            text-transform: capitalize; /*It autocapitalize first letter after space(Used for Camelcase writings*/
+            text-transform:lowercase;
+            text-transform: uppercase;
+        }
+        .text-overflow{
+            text-overflow: clip;
+            text-overflow: ellipsis;
+        }
+        .text-shadow{
+            /* offset-x | offset-y | blur-radius | color */
+            font-size: 30px;
+            color: khaki;
+            text-shadow: 1px 1px 2px black;
+            text-shadow: 2px 2px 5px coral;
+            text-shadow: 0px 0px 5px coral;
+            text-shadow: 0px 0px 10px coral;
+            text-shadow: 2px 2px 5px palevioletred;
+            text-shadow: 5px 5px 2px teal;
+        }
+        .text-indent{
+            text-indent: 0px;
+            text-indent: 20px;
+            text-indent: 50px;
+        }
+        .text-justify{
+            text-justify: distribute;
+            text-justify: newspaper;
+        }
+        .word-spacing{
+            /* Defines spacing between words... */
+            word-spacing: normal;
+            word-spacing: 20px; 
+            word-spacing: 50px; 
+        }
+        .letter-spacing{
+            /* Defines spacing between each letters (e.g. a    b   c   d) */
+            letter-spacing: 20px;
+        }
+        .direction{
+            /* defines direction left-to-right & right-to-left */
+            direction: ltr;
+            direction:rtl;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Text in CSS</h1>
+    <hr>
+    <ul>
+        <li>text-align</li>
+        <li>color</li>
+        <li>text-decoration</li>
+        <li>text-transform</li>
+        <li>text-overflow</li>
+        <li>text-shadow</li>
+        <li>text-indent</li>
+        <li>text-justify</li>
+        <li>word-spacing</li>
+        <li>letter-spacing</li>
+        <li>direction</li>
+
+    </ul>
+    <hr>
+
+    <p>text-align</p>
+    Before: Chirag Thanki 
+    <div class="text-align">After: Chirag Thanki.</div>
+    <hr>
+
+    <p>color</p>
+    Before: Chirag Thanki 
+    <div class="color">After: Chirag Thanki.</div>
+    <hr>
+
+    <p>text-decoration</p>
+    Before: Chirag Thanki 
+    <div class="text-decoration">After: Chirag Thanki <br> </div>
+    <a id="a" href="#">Hello, I'm Anchor</a>
+    <hr>
+
+    <p>text-transform</p>
+    Before: Chirag Thanki 
+    <div class="text-transform">After: chirag thanki</div>
+    <hr>
+
+    <p>text-overflow</p>
+    Before: Chirag Thanki 
+    <div class="text-overflow">After: Chirag Thanki <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas repellendus cumque animi vero doloribus itaque magnam sit, vel velit distinctio adipisci, est iste a porro, nostrum beatae fugiat reprehenderit dolor eaque perspiciatis? Natus facilis quod quo doloremque velit ducimus hic necessitatibus! Qui adipisci impedit error accusantium odio at officiis quaerat!</div>
+    <hr>
+
+    <p>text-shadow</p>
+    Before: Chirag Thanki 
+    <div class="text-shadow">After: Chirag Thanki</div>
+    <hr>
+
+    <p>text-indent</p>
+    Before: Chirag Thanki 
+    <div class="text-indent">After: Chirag Thanki</div> 
+    <hr>
+
+    <p>text-justify</p>
+    Before: Chirag Thanki 
+    <div class="text-justify">After: Chirag Thanki</div> 
+    <hr>
+
+    <p>word-spacing</p>
+    Before: Chirag Thanki 
+    <div class="word-spacing">After: Chirag Thanki</div> 
+    <hr>
+
+    <p>letter-spacing</p>
+    Before: Chirag Thanki 
+    <div class="letter-spacing">After: Chirag Thanki</div> 
+    <hr>
+
+    <p>direction</p>
+    Before: Chirag Thanki 
+    <div class="direction">After: Chirag Thanki</div> 
+    <hr>
+</body>
+</html>

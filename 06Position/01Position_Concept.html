@@ -1,0 +1,105 @@
+Change your start page? … Currently it's set to Home. You can change it anytime in Settings.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 2px solid red;
+        }
+        div[class*="box"]{
+            height: 300px;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        .box-1{
+            background-color:burlywood;
+        }
+        .box-2{
+            background-color:cornflowerblue;
+        }
+        .box-3{
+            background-color:darkcyan;
+            /* position: relative;
+            z-index: 2; */
+        }
+        .box-4{
+            background-color:darkgrey;
+        }
+        .box-5{
+            background-color:rosybrown;
+            position: relative;
+        }
+        .fixed{
+            background-color: black;
+            color: aliceblue;
+            font-size: 50px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 10;  /*z-index is used to display element to foreground
+                                higher z-index no. shows its priority over other elements
+                                e.g. z-index 10 has higher priority than z-index 7*/
+        }
+        .sticky{
+            background-color: teal;
+            color: khaki;
+            font-size: 30px;
+            position: sticky;
+            top: 0px;
+        }
+        div[class*="box-ab"]{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        .box-ab-1{
+            background-color: crimson;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            /* z-index: 7; */
+        }
+        .box-ab-2{
+            background-color: blue;
+            top: 80px;
+            left: 80px;
+            z-index: 2;
+        }
+        .box-ab-3{
+            background-color: yellow;
+            color: black !important;
+            top: 110px;
+            left: 110px;
+            z-index: 3;
+            z-index: 5;
+        }
+        .box-ab-4{
+            background-color: cadetblue;
+            top: 140px;
+            left: 140px;
+            z-index: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">Fixed</div>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">Box-2
+        <div class="sticky">Sticky</div>
+    </div>
+    <div class="box-3">Box-3</div>
+    <div class="box-4">Box-4</div>
+    <div class="box-5">Box-5
+        <div class="box-ab-1">box-ab-1</div>
+        <div class="box-ab-2">box-ab-2</div>
+        <div class="box-ab-3">box-ab-3</div>
+        <div class="box-ab-4">box-ab-4</div>
+    </div>
+</body>
+</html>

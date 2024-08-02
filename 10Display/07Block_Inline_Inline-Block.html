@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display</title>
+    <style>
+      h1 {
+        background-color: aqua;
+        width: 500px;
+        height: 50px;
+        /* By Default h1 is block */
+        /* text-align: center; */
+
+        /* To hide an element, we use display:none */
+        display: none;
+      }
+      #span1 {
+        background-color: aqua;
+        /* By default span is inline */
+        /*You just can't change the width and height of inline elements.*/
+        width: 500px;
+        height: 50px;
+      }
+      #span2 {
+        /* But if we change the display of span to inline-block or block then we
+        can get the result.*/
+        display: block;
+        background-color: aqua;
+        width: 500px;
+        height: 50px;
+
+        /* if we comment the width, then it will only occupy width of the content as below
+          - Only works for "display: inline-block;" property. */
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chirag Thanki</h1>
+    <span id="span1">Display:"inline"</span>
+    <span id="span2">Display: inline-block / block</span>
+    <h1>Chigs Thanky</h1>
+  </body>
+</html>

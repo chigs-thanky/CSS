@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ul {
+            display: flex;
+
+        }
+
+        .navbar{
+            font-size: 30px;
+            border: 2px solid white;
+        }
+        .item {
+            /* margin: 0; */
+            border: 2px solid white;
+            list-style-type: none;
+            padding: 20px 50px;
+        }
+
+        section{
+            margin: 0;
+            padding: 0;
+            border: 2px solid white;
+        }
+
+        section::before{
+            content: "This is a Before-Content";
+        }
+
+        section::after{
+            content: "This is a After-Content";
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="ul">
+                <li class="item">Home</li>
+                <li class="item">Products</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+
+        <section>
+            <h3>Welcome to Coding World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui, repellat autem molestias tempora nisi
+                laboriosam praesentium numquam eum fugiat beatae nihil? Dolor officiis, esse voluptas at repudiandae
+                eveniet repellendus!</p>
+        </section>
+    </header>
+</body>
+
+</html>

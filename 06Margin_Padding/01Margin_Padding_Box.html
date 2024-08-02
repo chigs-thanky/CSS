@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding Box</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        #title{
+            font-size: 30px;
+            background-color: rgb(221, 130, 96);
+        }
+        /*margin/padding
+            top/bottom (y-axis) right-left (x-axis) */
+        .margin{
+            background-color: teal;
+            color: khaki;
+            border: 3px solid red;
+            margin: 100px; /*all four direction=100px*/
+            margin:100px 200px; /*top-bottom=100px    right-left=200px*/
+            margin:100px 200px 300px; /*top=100px      right-left=200px        bottom=300px*/
+            margin:100px 200px 300px 400px; /*top=100px       right=200px     bottom=300px     left=400px*/
+        }
+        
+        .padding{
+            background-color: teal;
+            color: khaki;
+            border: 3px solid red;
+            padding: 100px; /*All four direction*/
+            padding: 100px 200px; /*top-bottom=100px    right-left=200px*/
+            padding: 100px 200px 300px; /*top=100px      right-left=200px        bottom=300px*/
+            padding: 100px 200px 300px 400px; /*top=100px       right=200px     bottom=300px     left=400px*/
+        }
+        
+        div[class*="box"]{
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            margin: 20px auto;
+            /* padding: 20px; */
+        }
+
+        .border-box{
+            box-sizing: border-box;
+            padding: 20px;
+            /* Width & height doesn't change if we give padding to the border-box. */
+            /* overflow:scroll; */
+
+        }
+
+        .content-box{
+            box-sizing: content-box;
+            /* Width & height changes according to padding value. */
+            padding: 20px; /*All direction*/
+            /*Total width = width of div(200px) + 2 x padding right-left(20px) = 200 + 40 =>240px total*/
+            /*Total height = height of div(200px) + 2 x padding (20px) top-bottom = 200 + 40 =>240px total*/
+            padding: 40px 80px; /*top-bottom = 40px     right-left = 80px */
+            /*Total width = width of div(200px) + 2 x padding right-left(80px) = 200 + 160 =>360px total*/
+            /*Total height = height of div(200px) + 2 x padding (40px) top-bottom = 200 + 80 =>280px total*/
+            padding: 60px 40px 80px 120px; /* [T R B L] = [60px 40px 80px 120px] */ 
+            /*Total width = width of div(200px) + right padding(40px) + left padding(120px) = 200+40+120 =>360px*/
+            /*Total height = height of div(200px) + top padding(60px) + bottom padding(80px) = 200+60+80 =>340px*/
+        }
+    </style>
+</head>
+<body>
+    <span id="title">Margin-Padding in CSS</span> <hr>
+    <div class="margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vitae provident totam unde. Perferendis quod nobis rem et natus, ut quisquam similique quo, ipsum provident doloremque minima modi, maiores ducimus.</div>
+    <hr>
+    <div class="padding">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure optio quasi quia. Alias quae eius, ex quod, laudantium, voluptatum distinctio voluptates eos doloremque reiciendis modi porro consequuntur. Vitae, ut optio.</div>
+    <hr>
+    <div class="border-box">border-box</div>
+    <hr>
+    <div class="content-box">content-box</div>
+</body>
+</html>

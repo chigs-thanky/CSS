@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        * {
+            /* border: 1px solid black; */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: tan;
+        }
+
+        div[class*="box"] {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box-1 {
+            background-color: crimson;
+            margin-right: 100px;
+
+        }
+
+        .box-2 {
+            background-color: rosybrown;
+            margin-left: 100px;
+
+        }
+
+        .box-3 {
+            background-color: violet;
+            margin: 50px;
+
+        }
+
+        .parent {
+            display: flex;
+            margin: 50px;
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="box-1">Box-1</div>
+            <div class="box-2">Box-2</div>
+        </div>
+        <div class="box-3">Box-3</div>
+    </div>
+</body>
+
+</html>

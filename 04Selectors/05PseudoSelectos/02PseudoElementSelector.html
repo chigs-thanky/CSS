@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Selector</title>
+    <style>
+        h1::before{
+            content: "--> ";
+        }
+
+        h1::after{
+            content: " <--";
+        }
+
+        p::first-letter{
+            font-size: 80px;
+            color: teal;
+        }
+        p::first-line{
+            font-size: 50px;
+            color: brown;
+        }
+        label::selection{
+            font-size: 100px;
+            background-color: teal;
+            color: khaki;
+        }
+        /* span::before{
+            content: "Mr. ";
+        } */
+        
+        span{
+            display: block;
+            background-color: teal;
+            color: khaki;
+        }
+        span::first-letter {
+            display: block;
+            /* color: red; */
+            font-size: 50px;
+        }
+        label{
+            display: block;
+        }
+        label::first-letter{
+            font-size: 60px;
+            color: crimson;
+        }
+        /* Note:Why first letter is not get 50px size */
+    </style>
+</head>
+<body>
+    <h1>Pseudo Element Selector (::)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi amet hic unde!</p>
+    <label>This is Label</label> <hr>
+    <span>Chirag Thanki</span>
+    <label>Virat Kohli</label>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg Clip Origin</title>
+    <style>
+    div{
+        width: 400px;
+        height: 250px;
+        border: 2px dashed red;
+        /* margin: top-bottom left-right; (Shorthand) */
+        margin: 20px 100px;
+        /* padding:top-bottom left-right; (Shorthand) */
+        padding:  10px 5px;
+    }
+
+    .bg-clip{
+        background-image: url(../../../Source_Files/Image/547267.jpg);
+        background-size: cover;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        /* background-clip: content-box; */
+        /* background-clip: padding-box; */
+        background-clip: border-box;
+    }
+    .bg-origin{
+        background-image: url(../../../Source_Files/Image/547267.jpg);
+        background-size: cover;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        /* background-origin:content-box; */
+        /* background-origin: padding-box; */
+        background-origin:border-box;
+    }
+    </style>
+</head>
+<body>
+    <h1>Background Clip vs Origin</h1>
+    <div class="bg-clip">Background Clip</div>
+    <div class="bg-origin">Background Origin</div>
+</body>
+</html>

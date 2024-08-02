@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid </title>
+    <style>
+        .container {
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .container div {
+            background-color: red;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .item-4 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            grid-row-start: 2;
+            grid-row-end: 4;
+
+            /* Shorthand of grid-column-start-end & grid-row-start-end */
+            /* grid-column: 1/ span 2;
+            grid-row: 2/ span 2; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shorthand of Grid column-row, start-end</h1>
+    <div class="container">
+        <div class="item-1">1</div>
+        <div class="item-2">2</div>
+        <div class="item-3">3</div>
+        <div class="item-4">4</div>
+        <div class="item-5">5</div>
+        <div class="item-6">6</div>
+        <div class="item-7">7</div>
+    </div>
+</body>
+
+</html>

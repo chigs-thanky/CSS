@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 2000px;
+            border: 2px solid black;
+            background-color: teal;
+        }
+
+        .sibling-1 {
+            height: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+            font-size: 32px;
+        }
+
+        .sibling-2 {
+            height: 200px;
+            border: 2px solid black;
+            background-color: rgb(17, 211, 27);
+            font-size: 32px;
+            /* position: relative; */
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .sibling-3 {
+            height: 200px;
+            border: 2px solid black;
+            background-color: rgb(241, 121, 8);
+            font-size: 32px;
+        }
+
+        .sticky {
+            width: fit-content;
+            height: fit-content;
+            border: 2px solid black;
+            background-color: blue;
+            /* margin-top: 50px; */
+            /* margin-left: 100px; */
+            margin-top: 10px;
+            margin-right: 20px;
+            padding: 5px;
+            position: sticky;
+            top: 30px;
+        }
+
+        p {
+            font-size: 24px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sibling-1">Sibling-1</div>
+        <div class="sibling-2">Sibling-2
+            <div class="sticky">Sticky</div>
+        </div>
+        <div class="sibling-3">Sibling-3</div>
+        <p>Q. What to do if we want to move sticky note as we want?</p>
+        <p>A. To move sticky note as we want, we can use "margin property" to move in the parent (Here, its sibling-2)
+        </p>
+    </div>
+</body>
+
+</html>

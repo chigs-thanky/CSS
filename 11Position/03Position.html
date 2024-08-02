@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .container {
+            width: 2400px;
+            height: 700px;
+            border: 2px solid black;
+            background-color: khaki;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            border: 2px solid khaki;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #absolute{
+            position: absolute;
+            top: 200px;
+            left: 300px;
+        }
+
+        #relative{
+            position: relative;
+            top: 40px;
+            left: 40px;
+        }
+
+        #fixed{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        #sticky{
+            position: sticky;
+            top: 10px;
+            left: 40px;
+        }
+
+        #static{
+            position: static /*By Default*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Container</p>
+        <div class="box" id="static">
+            <p>Static</p>
+        </div>
+        <div class="box" id="absolute">
+            <p>absolute</p>
+        </div>
+        <div class="box" id="relative">
+            <p>relative</p>
+        </div>
+        <div class="box" id="fixed">
+            <p>fixed</p>
+        </div>
+        <div class="box" id="sticky">
+            <p>sticky</p>
+        </div>
+    </div>
+</body>
+
+</html>

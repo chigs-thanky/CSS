@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align in CSS</title>
+    <style>
+        h1 {
+            padding: 0 0 0 40px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            box-sizing: border-box;
+            background-color: #eee;
+            border: 2px solid #000;
+            margin: 50px auto;
+            /* padding: 10px; */
+            padding: 0px;
+            height: 500px;
+            width: 500px;
+
+            display: flex;
+            /* align-items: flex-start; */
+
+            /* position: relative; */
+            /*
+            Here, we've comment out position: relative; hence position: absolute; will work by default according to body.
+            If we want position work according to div, then give that div position: relative;.
+            
+            Let's do practical.
+
+            -Take one div of class square.
+            -Then give it height-width, bg-color & border.
+            -Then give it position: relative; and give position: absolute; to four boxes of items class.
+            */
+            justify-content: center;
+            /* align-items: center; */
+
+        }
+
+        .items {
+            color: white;
+            font-weight: bold;
+            /* margin: 10px; */
+            padding: 10px;
+            position: absolute;
+        }
+
+        .items-1 {
+            background-color: orangered;
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+        }
+
+        .items-2 {
+            background-color: yellowgreen;
+            /* position: absolute; */
+            top: 0;
+            right: 0;
+
+        }
+
+        .items-3 {
+            background-color: mediumpurple;
+            /* position: absolute; */
+            bottom: 0;
+            right: 0;
+        }
+
+        .items-4 {
+            background-color: hotpink;
+            /* position: absolute; */
+            bottom: 0;
+            left: 0;
+        }
+
+        .square {
+            width: 300px;
+            height: 300px;
+            border: 2px dotted black;
+            background-color: lightgreen;
+            /* margin: 0 auto; */
+            position: relative;
+        }
+
+        .movable-box {
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            background-color: lightblue;
+            font-size: 14px;
+            padding: 5px;
+
+            /* fixed position */
+            /* position: fixed;
+            top: 0;
+            right: 0; */
+
+            /* Sticky position */
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            /*Will work when scroll horizontal */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS: Align & Position Concept</h1>
+    <div class="container sticky">
+        <div class="movable-box">Movable</div>
+        <div class="square">
+            <div class="items items-1">One</div>
+            <div class="items items-2">Two</div>
+            <div class="items items-3">Three</div>
+            <div class="items items-4">Four</div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="container">
+
+        <div class="square">
+            <div class="items items-1">One</div>
+            <div class="items items-2">Two</div>
+            <div class="items items-3">Three</div>
+            <div class="items items-4">Four</div>
+        </div>
+</body>
+
+</html>

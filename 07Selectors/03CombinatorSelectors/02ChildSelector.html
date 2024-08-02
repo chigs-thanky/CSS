@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        /* Below, we applied CSS to p tag which applies properties to every p tags */
+
+        /* p {
+            background-color: teal;
+            color: khaki;
+        } */
+
+        .box>p {
+            background-color: teal;
+            color: khaki;
+        }
+
+        .box {
+            border: 5px solid black;
+        }
+
+        .mini-box {
+            border: 5px dotted blue;
+        }
+
+        .mini-box>p {
+            background-color: grey;
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Child Selector (>)</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores!</p>
+    <div class="box">Box
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt.</p>
+        <div class="mini-box">
+            Mini-Box
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores!</p>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Row Column Start</title>
+    <style>
+        .container {
+            background-color: red;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* grid-template-areas: 'item-1' 'item-1 . item-5' 'item-1 . item-5'; 
+            Define address of item in row and column cell. Tha's it.
+            */
+            grid-template-areas: 'item-1 . .' 'item-1 . item-5' 'item-1 . item-5' 'item-7 item-7 .' 'item-7 item-7 .';
+
+        }
+
+        .item-1 {
+            grid-area: item-1;
+        }
+
+        .item-5 {
+            grid-area: item-5;
+        }
+
+        .item-7 {
+            grid-area: item-7;
+        }
+
+
+        .container div {
+            background-color: rgb(0, 255, 255, 0.7);
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-1">
+            <p>Item-1</p>
+        </div>
+        <div class="item-2">
+            <p>Item-2</p>
+        </div>
+        <div class="item-3">
+            <p>Item-3</p>
+        </div>
+        <div class="item-4">
+            <p>Item-4</p>
+        </div>
+        <div class="item-5">
+            <p>Item-5</p>
+        </div>
+        <div class="item-6">
+            <p>Item-6</p>
+        </div>
+        <div class="item-7">
+            <p>Item-7</p>
+        </div>
+        <div class="item-8">
+            <p>Item-8</p>
+        </div>
+        <div class="item-9">
+            <p>Item-9</p>
+        </div>
+        <div class="item-10">
+            <p>Item-10</p>
+        </div>
+    </div>
+</body>
+
+</html>

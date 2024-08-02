@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display CSS</title>
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+        }
+        header{
+            border: 2px solid black;
+            /* margin:auto; */
+            /* width: 50%; */
+        
+        }
+        /*Note:Inline element cannot be auto centered because they don't have any width while block elements have width so if you want to center any element using auto function, you need to make that element a block. Here, img is an inline, so making it block & then see the results.*/
+        img{
+            width: 100px;
+            display: block;
+            margin: auto;
+        }
+        h3{
+            font-size: 30px;
+            font-family: cursive;
+            /* margin: auto; */
+            text-align: center;
+        }
+        .container{
+            border: 1px solid black;
+            margin: 20px auto;
+            /* width: 50%; */
+        }
+        div[class*="box"]{
+            border: 2px solid black;
+            margin: 20px auto;
+            margin: 20px 20px;
+            /* padding: 20px auto; */
+            background-color: burlywood;
+            display:inline-block;
+            width: 30%;
+            border-radius: 20px;
+            padding: 40px;
+            /* align-items: center; */
+        }
+        b{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AtherLogo.jpg" alt="Ather Logo">
+        <h3>Welcome to Ather Energy</h3>
+    </header>
+    <div class="container">
+        <div class="box-1"><b>Box-1</b> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit numquam tempora, ratione quo quae doloremque odit ex id quod vitae esse, fugit enim alias accusamus hic blanditiis consectetur. Nostrum optio officiis aspernatur necessitatibus quos unde recusandae possimus voluptate voluptatum incidunt, sint est hic, veritatis doloremque. Ipsum debitis eveniet suscipit!</p>
+        </div>
+        <div class="box-2"><b>Box-2</b> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit numquam tempora, ratione quo quae doloremque odit ex id quod vitae esse, fugit enim alias accusamus hic blanditiis consectetur. Nostrum optio officiis aspernatur necessitatibus quos unde recusandae possimus voluptate voluptatum incidunt, sint est hic, veritatis doloremque. Ipsum debitis eveniet suscipit!</p>
+        </div>
+        <div class="box-3"><b>Box-3</b> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit numquam tempora, ratione quo quae doloremque odit ex id quod vitae esse, fugit enim alias accusamus hic blanditiis consectetur. Nostrum optio officiis aspernatur necessitatibus quos unde recusandae possimus voluptate voluptatum incidunt, sint est hic, veritatis doloremque. Ipsum debitis eveniet suscipit!</p>
+        </div>
+    </div>
+</body>
+</html>

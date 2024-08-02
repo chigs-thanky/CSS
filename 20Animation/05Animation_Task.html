@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Task</title>
+    <style>
+        .ball {
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: lightseagreen;
+            border-radius: 50%;
+            border-bottom: 30px groove darkred;
+            margin: 50vh auto;
+            animation: ballrotation 1s linear infinite;
+        }
+
+        @keyframes ballrotation {
+            from {
+                transform: rotate(0deg);
+                /* transform: translate(0px, 0px); */
+            }
+
+            to {
+                transform: rotate(360deg);
+                /* transform: scale(1.2); */
+                /* Why scale and rotate don't work at the same time */
+                /* transform: translate(100px, 100px); */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>

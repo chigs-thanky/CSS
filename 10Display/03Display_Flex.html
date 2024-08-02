@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            margin: 0 auto;
+            height: 600px;
+            width: 90%;
+            border: 2px solid red;
+           /* Flex */
+            display: flex;
+            justify-content: center; /* Only works in x-axis
+            justify works in parent i.e. div.flex*/
+            /* justify-content:first baseline; */
+            /* justify-content: start; */
+            /* justify-content:end; */
+            /* justify-content:space-around; */
+            /* justify-content:space-between; */
+            /* justify-content:space-evenly; */
+            /* justify-content:stretch; */
+            gap: 10px;
+            /* Gap between elements */
+            flex-direction: row; /* By Default */ 
+            /* flex-direction: column; */
+            /* flex-direction:row-reverse; */
+            /* flex-direction: column-reverse; */
+            
+            /* Flex-wrap */
+            flex-wrap:nowrap ;
+            /* flex-wrap:wrap ;  */
+            /* flex-wrap:wrap-reverse ;  */
+            /* align-items:center ; */
+            /* align items works only with flex-wrap:no-wrap and in y-axis
+            Align items work in parent i.e. div.flex */
+            
+
+        }
+
+        div[class*="box"] {
+            /* margin: 10px; */
+            /* margin: 0 auto; */
+            align-self: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: teal;
+        }
+        @media (max-width: 768px) {
+            .flex{
+                flex-wrap: wrap;
+            }
+        }
+        @media (max-width: 576px) { 
+            .flex{
+                flex-wrap: nowrap;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+        <div class="box4">Box4</div>
+
+    </div>
+    
+</body>
+
+</html>

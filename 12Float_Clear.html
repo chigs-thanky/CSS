@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Clear CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Linking Ubuntu font from google below: -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            /* Perhaps the best font is "Ubuntu"  */
+            /* To make every div of fixed size, we can use box-sizing: border-box property */
+
+            background-color: rosybrown;
+        }
+
+        .container {
+            border: 3px solid black;
+            width: 80%;
+            margin: 30px auto;
+            /* text-align: center; */
+        }
+
+        .item {
+            border: 2px solid purple;
+            margin: 12px 10px;
+            padding: 12px 10px;
+            background-color: rgb(182, 157, 124);
+            border-radius: 20px;
+        }
+
+        #fruits {
+            width: 48%;
+            float: left;
+        }
+
+        #computers {
+            width: 48%;
+            float: right;
+            /* clear: left; */
+        }
+
+        #stationary {
+            width: 98%;
+            /* float: left; */
+            clear: both;
+        }
+
+        p {
+            text-align: center;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Welcome to my Store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolor
+                magni nobis odio esse. Nam, voluptatum aut reiciendis repudiandae accusantium autem veritatis
+                necessitatibus, corrupti odio provident labore dolorum cum perspiciatis. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Laboriosam dolores, nam ut eum, iusto ullam optio aperiam et reiciendis a
+                temporibus! Fuga accusantium officiis quos harum qui sapiente molestiae quibusdam.</p>
+        </div>
+
+        <div id="computers" class="item">
+            <h3>Computers</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolor
+                magni nobis odio esse. Nam, voluptatum aut reiciendis repudiandae accusantium autem veritatis
+                necessitatibus, corrupti odio provident labore dolorum cum perspiciatis. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quae sunt ex deleniti esse laudantium dolor vel laboriosam aliquid ad amet
+                modi, eveniet velit, voluptatum facilis ducimus ipsa optio similique accusamus.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                dolor magni nobis odio esse. Nam, voluptatum aut reiciendis repudiandae accusantium autem veritatis
+                necessitatibus, corrupti odio provident labore dolorum cum perspiciatis.</p>
+        </div>
+
+        <div id="grocery" class="item">
+            <h3>Grocery</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                dolor magni nobis odio esse. Nam, voluptatum aut reiciendis repudiandae accusantium autem veritatis
+                necessitatibus, corrupti odio provident labore dolorum cum perspiciatis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

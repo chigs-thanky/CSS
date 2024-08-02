@@ -1,0 +1,13 @@
+/* syntax
+    Selector{
+    property1: value1;
+    property2: value2;
+    } */
+
+.external {
+  color: darkmagenta;
+}
+
+ul {
+  font-size: 30px;
+}

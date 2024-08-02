@@ -1,0 +1,56 @@
+.govind {
+    background-color: lightslategrey;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.son {
+    background-color: tomato;
+    text-indent: 5%;
+}
+
+.gson {
+    background-color: yellowgreen;
+    text-indent: 10%;
+}
+
+.child {
+    background-color: darkcyan;
+    text-indent: 15%;
+}
+
+/* Descendent Selector */
+.govind div {
+    color: white;
+}
+
+.son div {
+    color: blue;
+}
+
+
+div[class="child"] {
+    color: tomato;
+}
+
+
+/* TagName [AttributeName="value"] {
+    css property: value;
+} */
+
+/* Attribute Selector */
+a[title="link"] {
+    /*Used for selecting attribute having value "link" only */
+    color: black
+}
+
+a[title*="link"] {
+    /*Used for selecting attribute having value that contain "link" value irrespective of next character. i.e. link, link1, link2, link3 all get selected.
+    When we want to select all, we can put (* - Asterisk) to target all values. */
+    color: black;
+}
+
+a {}

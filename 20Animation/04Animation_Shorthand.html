@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Shorthand</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-color: blue;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 5px;
+            border-bottom: 5px solid darkred;
+            border-top: 5px dotted blue;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 60px;
+            border-bottom-left-radius: 80px;
+            border: 2px solid black;
+            border-right: hidden;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 20px;
+
+            /* Animation shorthand property 
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+
+            animation: boxmove 1s linear 2s 4 alternate;
+        }
+
+        @keyframes boxmove {
+            from {
+                transform: translate(0, 0)
+            }
+
+            to {
+                transform: translate(300px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div> <br><br>
+    <div class="box1"></div>
+</body>
+
+</html>

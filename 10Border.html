@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* border-box keeps width & height of box unchanged */
+            box-sizing: border-box;
+        }
+        .container{
+            width: 500px;
+            height: 300px;
+            margin: 20px auto;
+            border: 10px solid red;
+            border: 10px dotted red;
+            border: 10px dashed red;
+            border: 10px ridge red;
+            border: 10px inherit red;
+            border: 10px outset red;
+            border: 10px double red;
+            outline: 5px dashed purple;
+            outline: 5px solid purple;
+            outline: 5px dotted purple;
+            border-radius: 50%;
+            border-radius: 50px;
+            background: url(../../Files/Image/ariana-grande-singing-son-1920x1080.jpg) no-repeat center left/ 300px;
+            background: url(../../Files/Image/ariana-grande-singing-son-1920x1080.jpg) no-repeat center right/ 300px;
+            background: url(../../Files/Image/ariana-grande-singing-son-1920x1080.jpg) no-repeat top left/ 300px;
+            background: url(../../Files/Image/ariana-grande-singing-son-1920x1080.jpg) no-repeat top right/ 300px;
+            background: url(../../Files/Image/ariana-grande-singing-son-1920x1080.jpg) no-repeat bottom left/ 300px;
+            background: url(../../Files/Image/ariana-grande-singing-son-1920x1080.jpg) no-repeat bottom right/ 300px;
+        }
+        p{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border in CSS</h1>
+    <div class="container">Border</div>
+    <p>Background Shorthand Property</p> <br>
+    <p>&emsp;&ensp;background: background-color | url() | background-repeat | background-attachment | background-position / background-size; <br> <br>
+    e.g. background: url(../../Files/Image/ariana-grande-singing-son-1920x1080.jpg) no-repeat center left/ 300px;</p>
+</body>
+</html>

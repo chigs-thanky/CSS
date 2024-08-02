@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibiling Selector</title>
+    <style>
+        .parent~p,
+        span {
+            background-color: teal;
+            color: khaki;
+        }
+
+        .bro1~p {
+            background-color: cadetblue;
+            color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>General Sibiling Selector (~ Tilde)</h1>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <span>This is Span</span>
+    <!-- line 29-33 are sibling of "parent" -->
+    <div class="bro1">
+        <p>Bro-1</p>
+        <p>Bro-1</p>
+        <p>Bro-1</p>
+    </div>
+    <p>Bro-2</p>
+    <p>Bro-2</p>
+    <p>Bro-2</p>
+    <!-- div class bro1 and para bro-2 are siblings (line 34 (div-bro1) and line 39-41 (para bro2) are siblings) -->
+
+</body>
+
+</html>

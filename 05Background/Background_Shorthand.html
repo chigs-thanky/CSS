@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg Shorthand</title>
+    <style>
+        div{
+            width: 400px;
+            height: 300px;
+            border: 5px solid red;
+            /* border-top:  5px red;
+            border-right: blue;
+            border-bottom: green;
+            border-left: palevioletred; */
+        }
+
+        .bg-shorthand{
+/* Order--> background:color background-image(url) repeat attachment position(left-right, top-bottom /size(width, height) */
+            background:url(../../../Source_Files/Image/friends-4k-fl.jpg) no-repeat fixed border-box 30px 120px/300px 200px;
+            /* background:url(../../../Source_Files/Image/friends-4k-fl.jpg) no-repeat fixed border-box center top/300px 200px */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bg Shorthand</h1>
+    <div class="bg-shorthand">Bg Shorthand</div>
+    <hr>
+    <div class="bg-position">Bg Position</div>
+</body>
+</html>

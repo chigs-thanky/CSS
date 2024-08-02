@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            background-color: #2196f3;
+            padding: 10px;
+            display: grid;
+            grid-template-areas: 'header header header' 'menu main right' 'menu footer footer';
+            gap: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            font-size: 30px;
+            text-align: center;
+            margin: 2px;
+        }
+
+        .grid-item-1 {
+            grid-area: header;
+        }
+
+        .grid-item-2 {
+            grid-area: menu;
+        }
+
+        .grid-item-3 {
+            grid-area: main;
+        }
+
+        .grid-item-4 {
+            grid-area: right;
+        }
+
+        .grid-item-5 {
+            grid-area: footer;
+        }
+
+        li {
+            list-style-position: outside;
+            margin-left: -20px;
+        }
+
+        p,
+        li {
+            font-size: 20px;
+
+        }
+
+        /****************************************************/
+
+        .grid-layout {
+            background-color: rgba(228, 143, 47, 0.904);
+            display: grid;
+            grid-template-areas: 'header header header' 'sidebar content-1 content-1' 'sidebar  content-2 content-3' 'footer footer footer';
+            gap: 10px;
+            padding: 10px;
+
+
+        }
+
+        .grid-layout div {
+            border: 5px solid black;
+            color: white;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(45deg, rgba(2, 0, 36, 01) -20%, rgba(9, 9, 121, 1) 2%, rgba(0, 212, 255, 1) 90%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .box-1 {
+            grid-area: header;
+        }
+
+        .box-2 {
+            grid-area: sidebar;
+        }
+
+        .box-3 {
+            grid-area: content-1;
+        }
+
+        .box-4 {
+            grid-area: content-2;
+        }
+
+        .box-5 {
+            grid-area: content-3;
+        }
+
+        .box-6 {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid Layout</h1>
+    <p>THe CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design
+        webpages without having to use floats and positioning.</p>
+
+    <div class="grid-container">
+        <div class="grid-item-1">Header</div>
+        <div class="grid-item-2">Menu</div>
+        <div class="grid-item-3">Main</div>
+        <div class="grid-item-4">Right</div>
+        <div class="grid-item-5">Footer</div>
+    </div>
+    <br>
+    <hr>
+
+    <ul>
+        <li>Now creating another layout using Grid to clear concepts better.</li>
+    </ul>
+
+
+    <div class="grid-layout">
+        <div class="box-1">
+            <p>Header</p>
+        </div>
+        <div class="box-2">
+            <p>Sidebar</p>
+        </div>
+        <div class="box-3">
+            <p>Content-1</p>
+        </div>
+        <div class="box-4">
+            <p>Content-2</p>
+        </div>
+        <div class="box-5">
+            <p>Content-3</p>
+        </div>
+        <div class="box-6">
+            <p>Footer</p>
+        </div>
+    </div>
+</body>
+
+</html>

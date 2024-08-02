@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Display Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div[class*="box"] {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: teal;
+        }
+
+        .container {
+            margin: 10px;
+            border: 1px solid red;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            /* gap: 30px; */
+            }
+
+        /* X-Large devices (large desktops, less than 1400px) */
+        @media (max-width: 1200px) {
+            
+            .container {
+            border: 1px solid red;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            gap: 30px;
+            }
+        }
+
+        /* Medium devices (tablets, less than 992px) */
+        @media (max-width: 991.98px) {
+            .container {
+                /* Once display:flex is given for media query, then no need to write for other media queries. 
+            Write only that properties which are required. */
+
+            /* border: 1px solid red; */
+            /* display: flex; */
+            justify-content: center;
+            /* align-items: center; */
+            flex-wrap: wrap;
+            }
+    
+        }
+
+        /* X-Small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            .container {
+
+                 /* Once display:flex is given for media query, then no need to write for other media queries. 
+            Write only that properties which are required. */
+
+            /* border: 1px solid red; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            /* flex-wrap: nowrap; */
+            }
+        }
+        h1{
+            width: 300px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Responsive Design</h1>
+    <div class="container">
+        <div class="box-1">Box-1</div>
+        <div class="box-2">Box-2</div>
+        <div class="box-3">Box-3</div>
+    </div>
+</body>
+
+</html>

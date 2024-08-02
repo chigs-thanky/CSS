@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept of Pseudo Class & Element</title>
+    <style>
+        .one {
+            border: 5px solid red;
+        }
+
+        .two {
+            border: 5px solid red;
+        }
+
+        p:nth-child(2) {
+            color: blue;
+        }
+
+        p:nth-last-of-type(2) {
+            color: purple;
+        }
+
+        p:only-of-type {
+            background: red;
+        }
+
+        span:only-of-type {
+            background: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Concept of Pseudo Class & Element</h1>
+    <div class="one">One
+        <p>Para-1 in div</p>
+        <p>Para-2 in div</p>
+        <p>Para-3 in div</p>
+        <p>Para-4 in div</p>
+    </div>
+    <p>Para-5 outside div Q. Why is the getting blue color?</p>
+    <p>Para-6 outside div</p>
+    <div class="two">Two
+        <p>Para-7 in div</p>
+        <p>Para-8 in div</p>
+        <p>Para-9 in div</p>
+        <p>Para-10 in div</p>
+        <p>Para-11 in div</p>
+    </div>
+    <br>
+    <hr>
+    <div>
+        <p>This is a paragraph.</p>
+    </div>
+
+    <div>
+        <p>This is a paragraph.</p>
+        <p>This is a paragraph.</p>
+    </div>
+
+    <div>
+        <span>Hello</span>
+        <span>Hello</span>
+    </div>
+    <span>Hello</span>
+</body>
+
+</html>

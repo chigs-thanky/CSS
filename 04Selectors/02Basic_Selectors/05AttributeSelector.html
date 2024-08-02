@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        div[class*="box"] {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        .box-1 {
+            background-color: blue;
+        }
+
+        .box-2 {
+            background-color: rgb(25, 206, 19);
+        }
+
+        .box-3 {
+            background-color: rgb(209, 54, 15);
+        }
+
+        .box-4 {
+            background-color: rgb(4, 183, 238);
+        }
+
+        .box-5 {
+            background-color: rgb(230, 21, 125);
+        }
+
+        div[class*="square"] {
+            width: 200px;
+            height: 200px;
+            border: 5px solid red;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .square-1 {
+            background-color: chocolate;
+        }
+
+        .square-2 {
+            background-color: crimson;
+        }
+
+        .square-3 {
+            background-color: purple;
+        }
+
+        span {
+            font-family: cursive;
+            font-size: 20px;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Attribute Selector</h1>
+    <div class="box-1">Box 1</div>
+    <div class="box-2">Box 2</div>
+    <div class="box-3">Box 3</div>
+    <div class="box-4">Box 4</div>
+    <div class="box-5">Box 5</div>
+    <br>
+    <hr>
+    <br>
+    <div class="square-1"><span>Square-1</span></div>
+    <div class="square-2"><span>Square-2</span></div>
+    <div class="square-3"><span>Square-3</span></div>
+</body>
+
+</html>

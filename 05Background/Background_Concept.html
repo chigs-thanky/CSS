@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Concept</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            /* For perfect full screen without scroll, we use viewport width(vw) and viewport height(vh) */
+            width: auto;
+            height: 100vh;
+            border: 5px solid blue;
+            background-image: url(../Assets/4k-money-heist-season-4-netflix-aw-1920x1080.jpg);
+            background-size: 300px 200px;
+            /*First for width, second for height*/
+
+            /* background-size: 100vw 100vh; */
+            /*Used to stretch the image upto full viewport*/
+            background-size: 100% 100%;
+            /*Percentages also work*/
+
+            /* background-size: contain; */
+
+            /* background-repeat: space; */
+            /* background-position: accepts two values: one for horizontal(X-Axis), other for vertical (Y-Axis)
+            /* background-position: bottom left; */
+
+            /* To align text in paragraph to the center, we will use display flex property as below */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 32px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p>Concept of Viewport Width & Height</p>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Q. Backgroud is cutting. If we want full background stretched to screem, then what to do? -->
+<!-- A. background-size: 300px 200px;
+        First for width, second for height
+
+        background-size: 100vw 100vh;
+        Used to stretch the image upto full viewport
+
+        background-size: 100% 100%;
+        Percentages also work, Used to stretch the image 100% to its parent.
+
+        background-size: contain;
+        Contain resize the image without distortion/ without compromize in aspect ratio.
+
+    -->

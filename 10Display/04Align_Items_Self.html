@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align in CSS</title>
+    <style>
+        h1 {
+            padding: 0 0 0 40px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            box-sizing: border-box;
+            background-color: #eee;
+            border: 2px solid #000;
+            margin: 50px auto;
+            padding: 10px;
+            height: 500px;
+            width: 500px;
+
+            display: flex;
+            align-items:stretch; /*Defaut value */
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: baseline; /* Align items from baseline (upper or lower line drawn on letters/words. 
+            E.g. In English language, baseline is lower while in Gujarati, baseline is upper. */
+            align-items: center;
+            align-items: first baseline;
+            align-items: last baseline;
+            align-items: baseline; /*Keeps content in the same line */
+        }
+
+        .items {
+            color: white;
+            font-weight: bold;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .items-1 {
+            background-color: orangered; 
+        }
+        
+        .items-2 {
+            background-color: yellowgreen;
+            height: 100px;
+            font-size: 40px;
+        }
+        
+        .items-3 {
+            background-color: mediumpurple;
+        }
+        
+        .items-4 {
+            background-color: hotpink;
+            height: 150px;
+            font-size: 10px;
+            align-self: center; /* Used for particular item to align */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS: Align Items & Align Self Tutorial</h1>
+    <div class="container">
+        <div class="items items-1">One</div>
+        <div class="items items-2">Two</div>
+        <div class="items items-3">Three</div>
+        <div class="items items-4">Four</div>
+    </div>
+</body>
+
+</html>
