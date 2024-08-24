@@ -12,8 +12,8 @@
             display: grid;
             grid-template-columns: auto auto auto;
 
-            /* We can set the size of each colum as below: */
-            grid-template-columns: 50px 80px 100px 150px 250px;
+            /* We can set the size of each column as below: */
+            grid-template-columns: 50px 80px 100px;
 
             /* similary we can also set the size of each row as below: */
             grid-template-rows: auto auto;
@@ -28,10 +28,11 @@
 
         }
 
-        /* I want to stretch item-1 to full row. Here we have 3 columns, so we need to target the specific div/element or here item-1 */
+        /* I want to stretch item-1 to full row. Here we have 3 columns, so we need to target the specific div/element or in this case, item-1 */
         .item-1 {
             grid-column-start: 1;
-            grid-column-end: 4;
+            /* grid-column-end: 4; */
+            grid-column: 1 / span 3;
         }
 
         /* We can set item-5 with shorthand grid-area property as below:  */
@@ -39,6 +40,10 @@
             /* Targeting item-5 */
             /* grid-area: row-start/colum-start/row-end/column-end */
             grid-area: 3/ 1/ 3/ 4;
+
+            /* or */
+            /* We can also write like this: */
+            /* grid-area: 3 / 1 / auto / -1; */
 
             /* Or We can also use like this: */
             grid-area: 3/ 1/ span 1/ span 3;
@@ -48,8 +53,8 @@
 
         /* Now setting item-6 span 2 rows as below*/
         .item-6 {
-            /* grid-area: 4/1/6/2; */
-            grid-area: 4/ 1/ span 2/ span 1;
+            grid-area: 4/1/6/2;
+            /* grid-area: 4 / 1 / -1 / 2; */
         }
 
 
